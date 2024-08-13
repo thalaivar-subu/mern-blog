@@ -1,0 +1,20 @@
+{
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "npx nodemon src/server.js",
+    "build-start": "cd ../front-end/ && npm run build && cd .. && cp -r front-end/build/* back-end/build/ && cd back-end/ && npm start"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "eslint": "^9.9.0",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.3.1",
+    "mongodb": "^6.8.0",
+    "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
